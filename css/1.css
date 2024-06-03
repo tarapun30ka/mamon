@@ -1,0 +1,331 @@
+body {
+    /*     font-family: "Ubuntu", sans-serif; */
+        
+        font-family: "Hellix", sans-serif;
+    }
+    
+    .header {
+        width: 100%;
+        max-width: 1180px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 30px;
+        box-sizing: border-box;
+        font-weight: 700;
+    }
+    
+    .footer{
+        /* padding-top: 0px; */
+        padding-bottom: 20px;
+        background-color: #f7f7f7;
+    }
+    
+    .wrap {
+        width: 100%;
+        max-width: 1200px;
+        /* margin: 82px 362px; */
+        margin: 0 auto;
+
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+    }
+    
+    .nav {
+        list-style-type: none;
+        display: flex;
+        /* чтобы элементы встали в ряд */
+        justify-content: flex-start;
+        font-size: 14px;
+        align-items: center;
+    }
+    
+    /* надо стилизовать список, чтобы между ними было какое-то расстояние */
+    .nav>li {
+        margin-left: 40.5px;
+        padding-top: 8px;
+    }
+    
+    .nav>li>a {
+        text-decoration: none;
+        color: #202020;
+        align-items: center;
+    
+        font-weight: 600;
+    }
+    
+    /* стилизуем кнопку */
+    .nav_btn {
+        background-color: #5528FF;
+        border-radius: 5px;
+        padding: 3px 10px;
+        color: #ffffff;
+        border: none;
+        margin-top: 4px;
+        margin-right: -31px;
+        font-weight: 600;
+        width: 100px;
+        height: 24px;
+        /* Rectangle */
+    
+        /* position: absolute;
+        width: 100px;
+        height: 24px;
+        left: 1451px;
+        top: 76.5px; */
+    
+    /*     height: 24px; */
+    
+    }
+    
+    .logo {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+    
+    .logo_img {
+        display: block;
+        width: 58px;
+        height: 58px;
+        background-image: url(../img/logo.svg);
+        margin-right: 26px;
+    }
+    
+    /* стилизуем текст */
+    .logo_text {
+        /* font-family: Hellix; */
+        font-size: 24px;
+        text-align: center;
+        color: #202020;
+    }
+    
+    /* We're an independent development agency. */
+    .title-main {
+        /* font-family: 'Hellix'; */
+        font-size: 58px;
+        color: #202020;
+        font-weight: 700;
+        margin-bottom: -12px;
+        margin-top: 82px;
+        margin-left: 10px;
+    }
+    
+    /* We understand */
+    .text-main {
+        /* font-family: 'Hellix'; */
+        font-size: 32px;
+    /*     line-height: 52.5px; */
+        text-align: left;
+        color: #4F4F4F;
+        font-weight: 400;
+        margin-left: 10px;
+        max-width: 750px;
+        line-height: 53.8px;
+
+        margin-bottom: 55px;
+        /* We understand the intricacies of web development inside-out. That's why we build rock-solid Mobile and Web applications enriched with user-centered visual experiences. */
+    }
+    
+    /* вторая кнопка для связи */
+    .button {
+        background-color: #5528FF;
+        border-radius: 10px;
+        /* padding: 16px 59px; */
+        text-align: left;
+        text-align: justify;
+        padding-left: 52px;
+        color: #ffffff;
+        border: none;
+    
+        font-size: 24px;
+        font-weight: 400;
+    
+        width: 235px;
+        height: 60px;
+        margin-top: 2px;
+        margin-left: 9px;
+
+        margin-bottom: 109px;
+    }
+
+    .button-text{
+        font-size: 24px;
+        font-weight: 400;
+    }
+    
+    .page {
+        padding-top: 40px;
+        padding-bottom: 0px;
+        position: relative;
+    }
+    
+    .page-top {
+        border-top: 1px solid #C2C2C2;
+        margin-bottom: 107px;
+    
+        /* OUR SERVICES */
+    
+        /* position: absolute;
+        left: 19.22%;
+        right: 77.14%;
+        top: 0%;
+        bottom: 5.56%;
+    
+        font-family: 'Hellix';
+        
+         */
+        /* identical to box height */
+    
+    }
+    
+    .page h2 {
+        position: absolute;
+        top: -28px;
+        letter-spacing: 1.4px;
+        margin-left: -6px;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 300;
+        background-color: #ffffff;
+        padding: 5px 15px;
+        color: #C2C2C2;
+       }
+    
+    .services {
+        display: grid;
+        grid-template: 190px 185px / 46.6% 57.6%;
+        /* grid-row-gap: px; */
+        grid-column-gap: 128px;
+        /* а можно было через fraction */
+        /* grid-template: 1fr 1fr / 1fr 1fr; */
+    
+    }
+    
+    .services-item{
+        display: flex;
+        justify-content: flex-start;
+        /* чтобы картинки стали по центру */
+        align-items: center;
+    }
+    
+    .services_img{
+        flex-basis: 120px;
+        /* margin-top: 15px; */
+        text-align: center;
+        margin-top: 61px;
+        height: 61px;
+    }
+    
+    .services_text{
+        flex-basis: calc(80% - 120px);
+    }
+    
+    .services h3 {
+        font-size: 28px;
+        font-weight: 400;
+        margin-left: 24px;
+        margin-top: 70px;
+        /* margin-bottom: 0px; */
+    }
+    
+    .services p {
+        /* font-family: var(--font-family); */
+        font-weight: 400;
+        font-size: 14px;
+        color: #b2b2b2;
+        line-height: 1.7;
+        /* margin-top: 100px; */
+        margin-left: 25px;
+        max-width: 287px;
+        margin-top: -15px;
+        margin-bottom: 10px;
+        /* letter-spacing: 0.5px; */
+    }
+    
+   .clients {
+    display: grid;
+    grid-template: 60px 50px / repeat(4, 25.7%);
+    text-align: center;
+    grid-row-gap: 44px;
+    margin-top: 29px;
+    margin-left: 0px;
+}
+    
+    .team{
+        display: grid;
+        grid-template: repeat(3, 150px) / repeat(3, 34.9%);
+        /* чтобы сделать отступы между ячейками */
+        grid-row-gap: 10px;
+        margin-top: 41px;
+        margin-left: 10px;
+        /* grid-column-gap: 40px; */
+    }
+    
+    .team-item{
+        display: flex;
+        justify-content: flex-start;
+        /* чтобы картинки стали по центру */
+        align-items: center;
+        margin-left: 0px;
+    }
+    .team-item img{
+        margin-right: 33px;
+    }
+    .team-item>div{
+        flex-basis: calc(80% - 33px);
+    }
+    
+    .team-item h3 {
+        font-size: 28px;
+        color: #202020;
+        /* margin-bottom: 0; */
+        margin-top: 6px;
+        margin-left: 1px;
+        margin-bottom: 11px;
+    }
+    .team-item p {
+        font-size: 14px;
+        color: #B2B2B2;
+    }
+
+    .box-footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: -31px;
+        /* margin-bottom: 40px; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .social{
+        list-style-type: none;
+        padding-left: 0px;
+        display: flex;
+        margin-left: 100px;
+    }
+    
+    /* для отступов между */
+    .social>li{
+        margin-left: 38.5px;
+        /* margin-top: -4px; */
+    }
+    
+    .social>li>a{
+        text-decoration: none;
+        color: #b2b2b2;
+        font-size: 24px;
+    }
+
+    .wrap.box-footer {
+        padding-left: 42px;
+        padding-right: 0px;
+        padding-top: 20px;
+    }
+
+    
